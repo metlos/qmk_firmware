@@ -1,0 +1,162 @@
+{
+    "manufacturer": "Le Keeb",
+    "keyboard_name": "One",
+    "url": "",
+    "maintainer": "LK",
+    "usb": {
+        "vid": "0xCEEB",
+        "pid": "0x0001",
+        "device_version": "0.0.1"
+    },
+    "processor": "RP2040",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "ps2": {
+        "enabled": true,
+        "mouse_enabled": true,
+        "driver": "interrupt"
+    },
+    "matrix_pins": {
+        "cols": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP9"],
+        "rows": ["GP0", "GP1", "GP2", "GP3"]
+    },
+    "split": {
+        "enabled": true,
+        "soft_serial_pin": "GP10",
+        "transport": {
+            "protocol": "serial",
+        },
+        "main": "right",
+        "matrix_pins": {
+            "right": {
+                "cols": ["GP4", "GP5", "GP6", "GP7", "GP8", "GP9"],
+                "rows": ["GP0", "GP1", "GP2", "GP3"]
+            }
+        }
+    },
+    "features": {
+        "bootmagic": false,
+        "mousekey": true,
+        "extrakey": true,
+        "console": true,
+        "command": false,
+        "nkro": false,
+        "rgblight": false,
+        "audio": false
+    },
+//    "layouts": {
+//       "LAYOUT": {
+//           "layout": [
+//               {"x": 0, "y": 0, "label": "l00"},
+//               {"x": 1, "y": 0, "label": "l01"},
+//               {"x": 2, "y": 0, "label": "l02"},
+//               {"x": 3, "y": 0, "label": "l03"},
+//               {"x": 4, "y": 0, "label": "l04"},
+//               {"x": 5, "y": 0, "label": "l05"},
+//
+//               {"x": 0, "y": 1, "label": "l10"},
+//               {"x": 1, "y": 1, "label": "l11"},
+//               {"x": 2, "y": 1, "label": "l12"},
+//               {"x": 3, "y": 1, "label": "l13"},
+//               {"x": 4, "y": 1, "label": "l14"},
+//               {"x": 5, "y": 1, "label": "l15"},
+
+//               {"x": 0, "y": 2, "label": "l20"},
+//               {"x": 1, "y": 2, "label": "l21"},
+//               {"x": 2, "y": 2, "label": "l22"},
+//               {"x": 3, "y": 2, "label": "l23"},
+//               {"x": 4, "y": 2, "label": "l24"},
+//               {"x": 5, "y": 2, "label": "l25"},
+
+//               {"x": 0, "y": 3, "label": "lt0"},
+//               {"x": 1, "y": 3, "label": "lt1"},
+//               {"x": 2, "y": 3, "label": "lt2"},
+//               {"x": 3, "y": 3, "label": "lt3"},
+//            ]
+//       }
+//    }
+//   "layouts": {
+//      "LAYOUT": {
+//          "layout": [
+//              {"x": 0, "y": 0, "label": "r00"},
+//              {"x": 1, "y": 0, "label": "r01"},
+//              {"x": 2, "y": 0, "label": "r02"},
+//              {"x": 3, "y": 0, "label": "r03"},
+//              {"x": 4, "y": 0, "label": "r04"},
+//              {"x": 5, "y": 0, "label": "r05"},
+//
+//              {"x": 0, "y": 1, "label": "r10"},
+//              {"x": 1, "y": 1, "label": "r11"},
+//              {"x": 2, "y": 1, "label": "r12"},
+//              {"x": 3, "y": 1, "label": "r13"},
+//              {"x": 4, "y": 1, "label": "r14"},
+//              {"x": 5, "y": 1, "label": "r15"},
+
+//              {"x": 0, "y": 2, "label": "r20"},
+//              {"x": 1, "y": 2, "label": "r21"},
+//              {"x": 2, "y": 2, "label": "r22"},
+//              {"x": 3, "y": 2, "label": "r23"},
+//              {"x": 4, "y": 2, "label": "r24"},
+//              {"x": 5, "y": 2, "label": "r25"},
+
+//              {"x": 0, "y": 3, "label": "rt0"},
+//              {"x": 1, "y": 3, "label": "rt1"},
+//              {"x": 2, "y": 3, "label": "rt2"},
+//              {"x": 3, "y": 3, "label": "rt3"},
+//           ]
+//      }
+//   }
+    "layouts": {
+       "LAYOUT": {
+           "layout": [
+               {"x": 0, "y": 0, "label": "l00"},
+               {"x": 1, "y": 0, "label": "l01"},
+               {"x": 2, "y": 0, "label": "l02"},
+               {"x": 3, "y": 0, "label": "l03"},
+               {"x": 4, "y": 0, "label": "l04"},
+               {"x": 5, "y": 0, "label": "l05"},
+               {"x": 6, "y": 0, "label": "r00"},
+               {"x": 7, "y": 0, "label": "r01"},
+               {"x": 8, "y": 0, "label": "r02"},
+               {"x": 9, "y": 0, "label": "r03"},
+               {"x": 10, "y": 0, "label": "r04"},
+               {"x": 11, "y": 0, "label": "r05"},
+
+               {"x": 0, "y": 1, "label": "l10"},
+               {"x": 1, "y": 1, "label": "l11"},
+               {"x": 2, "y": 1, "label": "l12"},
+               {"x": 3, "y": 1, "label": "l13"},
+               {"x": 4, "y": 1, "label": "l14"},
+               {"x": 5, "y": 1, "label": "l15"},
+               {"x": 6, "y": 1, "label": "r10"},
+               {"x": 7, "y": 1, "label": "r11"},
+               {"x": 8, "y": 1, "label": "r12"},
+               {"x": 9, "y": 1, "label": "r13"},
+               {"x": 10, "y": 1, "label": "r14"},
+               {"x": 11, "y": 1, "label": "r15"},
+
+               {"x": 0, "y": 2, "label": "l20"},
+               {"x": 1, "y": 2, "label": "l21"},
+               {"x": 2, "y": 2, "label": "l22"},
+               {"x": 3, "y": 2, "label": "l23"},
+               {"x": 4, "y": 2, "label": "l24"},
+               {"x": 5, "y": 2, "label": "l25"},
+               {"x": 6, "y": 2, "label": "r20"},
+               {"x": 7, "y": 2, "label": "r21"},
+               {"x": 8, "y": 2, "label": "r22"},
+               {"x": 9, "y": 2, "label": "r23"},
+               {"x": 10, "y": 2, "label": "r24"},
+               {"x": 11, "y": 2, "label": "r25"},
+
+               {"x": 2, "y": 3, "label": "lt0"},
+               {"x": 3, "y": 3, "label": "lt1"},
+               {"x": 4, "y": 3, "label": "lt2"},
+               {"x": 5, "y": 3, "label": "lt3"},
+               {"x": 6, "y": 3, "label": "rt0"},
+               {"x": 7, "y": 3, "label": "rt1"},
+               {"x": 8, "y": 3, "label": "rt2"},
+               {"x": 9, "y": 3, "label": "rt3"},
+            ]
+       }
+    }
+}
